@@ -1,36 +1,52 @@
 # PocketAI Android APK Download
 
-Official distribution repository for **PocketAI** — Privacy-first, 100% on-device AI workspace and personal assistant for Android.
+Official distribution repository for **PocketAI** — a private, on-device AI workspace for Android.
 
-- 🌐 **Official Website:** [https://pocketai.pages.dev](https://pocketai.pages.dev)
-- 💳 **Subscription & Pro:** [https://pocketai.pages.dev/subscription.html](https://pocketai.pages.dev/subscription.html)
-- 📦 **Latest Release:** [Download pocketai.apk](https://github.com/rishibanota/pocketai-app-download/releases/latest)
+- Official website: [https://pocketai.pages.dev](https://pocketai.pages.dev)
+- Subscription and Pro: [https://pocketai.pages.dev/subscription.html](https://pocketai.pages.dev/subscription.html)
+- Latest release: [pocketai.apk](https://github.com/rishibanota/pocketai-app-download/releases/latest/download/pocketai.apk)
 
 ---
 
 ## Direct Download
 
-You can download the production APK directly from the [Releases page](https://github.com/rishibanota/pocketai-app-download/releases):
+Download the production APK directly:
 
-| Asset | Target Architecture | Min Android Version |
+| Asset | Target architecture | Minimum Android |
 | :--- | :--- | :--- |
 | **`pocketai.apk`** | arm64-v8a / armeabi-v7a | Android 8.0+ (API 26+) |
+
+Verify your download against `SHA256SUMS.txt` attached to the same release:
+
+```bash
+sha256sum -c SHA256SUMS.txt
+```
 
 ---
 
 ## Installation Guide (Sideloading on Android)
 
-1. Download **`pocketai.apk`** to your Android phone from the release link above.
-2. Open the downloaded file in your browser's Downloads or File Manager.
-3. If prompted with *"For your security, your phone is not allowed to install unknown apps from this source"*, tap **Settings** and toggle **Allow from this source**.
+1. Download **`pocketai.apk`** (~62 MB) to your Android phone.
+2. Open the downloaded file from your notifications, Downloads, or a file manager.
+3. If prompted with *"For your security, your phone is not allowed to install unknown apps from this source"*, tap **Settings** and allow installs from that source.
 4. Tap **Install** and open **PocketAI**.
-5. Go to the **Models** tab, download your preferred starter model (e.g. *SmolLM2 1.7B* or *Qwen2.5 1.5B*), and start chatting 100% offline!
+5. Go to the **Models** tab and download a starter model (for example SmolLM2 1.7B). Models range from about 0.5 GB to 4.5 GB and download in the app.
 
 ---
 
-## Verification & Integrity
+## Requirements
 
-Every build artifact is signed and checksummed:
-- **Package Name:** `com.pocketai.app`
-- **Inference Runtime:** `llama.cpp` native C++ GGUF engine
-- **Billing:** Powered by Dodo Payments Checkout Sessions
+- Android 8.0 (API 26) or newer
+- 4 GB RAM minimum for starter models; 6 GB+ recommended for larger Pro models
+- Free storage for the app plus the models you choose to download
+
+---
+
+## Verification and Integrity
+
+Every release artifact is signed and checksummed:
+
+- Package name: `com.rishienterprises.pocketai`
+- Signing: release keystore (SHA-256 certificate fingerprint `57:C0:D7:75:21:D6:CA:36:75:FA:62:1E:78:72:FE:D6:63:E8:75:28:DB:D4:E4:84:BF:0C:A1:E5:DC:AB:3E:9C`)
+- Inference runtime: `llama.cpp` native GGUF engine (no cloud inference)
+- Billing: Dodo Payments (subscription only; the app itself is free to use)

@@ -34,11 +34,15 @@ sha256sum -c SHA256SUMS.txt
 | :---: | :---: | :---: |
 | <img src="media/ss_1.jpg" width="230" alt="On-device chat running SmolLM2"> | <img src="media/ss_2.jpg" width="230" alt="Model library with 30+ downloadable models"> | <img src="media/ss_3.jpg" width="230" alt="Generation and context settings"> |
 
-## Watch the demo
+## Watch the trailer
 
-[![Play the PocketAI demo](media/promo-thumb.jpg)](media/pocketai_promo.mp4)
+[![Play the PocketAI trailer](media/promo-thumb.jpg)](media/pocketai_promo.mp4)
 
-A 22-second tour of offline chat, the model library, and Pro controls.
+A 22-second trailer of PocketAI.
+
+---
+
+Watch Full Demo Here ⏩:- https://www.youtube.com/shorts/lCL-OgE6jtM
 
 ---
 
